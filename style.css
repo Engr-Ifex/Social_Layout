@@ -16,6 +16,9 @@ nav{
     align-items: center;
     background-color: #0a0a50;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 nav ul{
     display: flex;
@@ -37,6 +40,7 @@ nav h1{
 }
 section{
     display: flex;
+    margin-top: 74px;
 }
 .section1{
     height: 785px;
@@ -56,7 +60,7 @@ section{
 }
 .section2-1{
     background-color: #fff;
-    width: 400px;
+    max-width: 400px;
     margin: 15px;
     padding: 20px;
     height: 200px;
@@ -89,9 +93,7 @@ section{
     font-size: 12px;
 }
 .section2-1 button:hover{
-    background-color: #fff;
-    border: 2px solid #0a0a50;
-    color: #0a0a50;
+    opacity: 0.8;
 }
 .section{
     display: flex;
@@ -114,7 +116,7 @@ section{
 }
 .section22{
     background-color: #fff;
-    width: 400px;
+    max-width: 400px;
     margin: 15px;
     padding: 20px;
 }
@@ -166,10 +168,15 @@ section{
     color: #0a0a50;
 }
 .sec{
-    width: 550px;
+    max-width: 550px;
     margin-left: 0px;
 }
 .ninja{
+    object-fit: cover;
+    max-width: 100%;
+}
+.freshfood{
+    max-width: 100%;
     object-fit: cover;
 }
 .pst{
@@ -177,9 +184,130 @@ section{
 }
 .sect{
     background-color: #fff;
-    width: 550px;
+    max-width: 550px;
     margin-left: 0px;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    margin-right: 15px;
+}
+.section3{
+    background-color: #fff;
+    margin: 15px;
+    /* padding: 20px; */
+    max-width: 500px;
+    margin-left: 0px;
+}
+.secti{
+    gap: 5px;
+}
+.suggest{
+    font-weight: bold;
+    color: #0a0a50;
+    padding-bottom: 30px;
+    padding-left: 20px ;
+    padding-top: 20px;
+}
+.sectio{
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 100px;
+}
+.sectio i{
+    cursor: pointer;
+}
+.add{
+    background-color: #0a0a50;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.add:hover{
+    opacity: 0.8;
+}
+.see-more{
+    width: 100%;
+    color: #fff;
+    background-color: #0a0a50;
+    border: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    cursor: pointer;
+}
+.see-more:hover{
+    border: 2px solid #0a0a50;
+    color: #0a0a50;
+    background-color: #fff;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0a0a50;
+    padding: 10px 0px 0px 0px;
+    margin-top: px;
+    position: absolute;
+    display: none;
+}
+.dropdown li:hover{
+    background-color: #0dd918;
+}
+.dropdown li a:hover{
+    color: #fff;
+}
+.dropdown li{
+    padding: 10px 80px 10px 15px;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+.dropdown2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0a0a50;
+    position: absolute;
+    left: 157px;
+    top: 92px;
+    display: none;
+}
+.dropdown2 li{
+    padding: 10px 50px 10px 15px;
+}
+ul li ul li:hover ul.dropdown2 {
+    display: block;
+}
+@media (max-width: 900px){
+    section{
+        flex-direction: column;
+    }
+    .section1{
+        display: none;
+    }
+    .section2-1{
+        max-width: 900px;
+    }
+    .section22{
+        max-width: 900px;
+    }
+    .sec{
+        margin: 15px;
+        margin-top: 0px;
+    }
+    .sect{
+        margin: 15px;
+        margin-top: 0px;
+    }
+    .section3{
+        margin: 15px;
+        margin-top: 0px;
+        max-width: 900px;
+    }
+    ul li a{
+        display: none;
+    }
 }
