@@ -219,6 +219,7 @@ section{
 }
 .add{
     background-color: #0a0a50;
+    color: white;
     border: none;
     padding: 5px 15px 5px 15px;
     border-radius: 20px;
